@@ -7,7 +7,7 @@
                 {% for product in site.belform_products %}
                 <div class="thumbnail-wrapper">
                     <a href="{{ product.url }}">
-                        <img src="{{ product.images }}" alt="{{ product.title }}">
+                        <img src="{{ product.images[1] }}" alt="{{ product.title }}">
                         <div class="caption">{{ product.title | truncate: 21}}</div>
                     </a>
                 </div>
