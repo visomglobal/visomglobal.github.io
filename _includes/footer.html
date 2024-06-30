@@ -1,0 +1,130 @@
+<style>
+    .blog-footer {
+  color: #727272 !important;
+  padding: 2.5rem 0 !important;
+  text-align: center !important;
+  background-color: #f9f9f9 !important;
+  border-top: 0.05rem solid #e5e5e5 !important;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.footer-column h3 {
+  border-bottom: 2px solid #727272;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-column ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #727272;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-column .social-icons a {
+  color: #727272;
+  text-decoration: none;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+.visom-branding {
+  color: #B6E853;
+  background: #181818;
+  border-radius: 3px;
+  font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .footer-column {
+    min-width: 100%;
+    text-align: center;
+  }
+}
+
+</style>
+{% include callback_modal.html %}
+<div class="blog-footer">
+    <div class="footer-container">
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="{{'about' | relative_url}}">About Us</a></li>
+                <li onclick="openModal('callback')"><a href="#">Careers</a></li>
+                <li><a href="{{'products'| relative_url}}">Products</a></li>
+                <li><a href="{{'projects'| relative_url}}">Projects</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="{{'services'| relative_url}}">Services</a></li>
+                <li onclick="openModal('callback')"><a href="#">Contact</a></li>
+                <li><a href="/atom.xml">RSS</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3 id="contact-sheet">Contact Us</h3>
+            <ul>
+                <li><i class="fa fa-map-marker" alt="Location"></i> | <a
+                    href="https://www.google.com/maps/place/Belform+Insulation/@42.9187817,-81.2557142,15z/data=!4m5!3m4!1s0x0:0xf3d95bf6dd0dd19f!8m2!3d42.9188014!4d-81.2555549"
+                    target="_blank">4231 Blakie Rd, London, ON N6L 1B8, Canada</a></li>
+                <li><i class="fa fa-envelope" alt="Email"></i> | <a href="mailto:chantal@belform.com">chantal@belform.com</a></li>
+                <li><i class="fa fa-phone" alt="Call Us"></i> | <a href="tel:+1-519-652-5190">519-652-5190</a></li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; Copyright © 2024, Belform Insulation. All rights reserved.</p>
+        <p style="line-height: 0.4;">Powered by <small><a class="visom-branding" href="https://visomglobal.com" target="_blank">ViSom Global</a></small></p>
+    </div>
+</div>

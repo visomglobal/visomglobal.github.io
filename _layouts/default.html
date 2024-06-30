@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Belform Insulation LTD</title>
+  <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url}}">
+  <link rel="stylesheet" href="{{ 'assets/css/fontawesome-all.min.css' | relative_url }}">
+  <link rel="shortcut icon" href="{% if site.favicon-url %}{{site.favicon-url}}{% else %}{{ 'assets/images/logo.png' | absolute_url }}{% endif %}" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body class="is-preload">
+  {% include home.html %}
+  {% include footer.html %}
+	<script src="{{ 'assets/js/jquery.min.js' | relative_url}}"></script>
+	<script src="{{ 'assets/js/browser.min.js' | relative_url}}"></script>
+	<script src="{{ 'assets/js/breakpoints.min.js' | relative_url}}"></script>
+	<script src="{{ 'assets/js/util.js' | relative_url}}"></script>
+	<script src="{{ 'assets/js/main.js' | relative_url}}"></script>
+</body>
+</html>

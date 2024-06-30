@@ -1,0 +1,85 @@
+---
+permalink: /index.html
+layout: default
+---
+
+<section id="banner">
+  <div class="content">
+      <header>
+          <h1>Welcome To
+              Belform<br /></h1>
+          <h2>
+              INSULATION LTD.
+          </h2>
+          <p>Advanced Insulation Solutions by Belform in Canada</p>
+      </header>
+      <p>Belform Insulation offers an extensive range of high-quality mechanical insulation products, tailored to meet the diverse needs of various industries across Canada. Our product line includes Belform Insul-Phen, Belform Styrofoam Interlocking System, and Trymer XP Pipe Insulation & Fittings.<br>
+        <br>Our insulation products are available in Resolco Phenolic, Styrofoam, Urethane, and Cellular Glass Foam, each designed to effectively control condensation and minimize heat gain or loss. To maximize insulation value, most of our products feature tongue and groove and shiplapped edges.
+          <br>
+          <br>Resolco Phenolic insulation comes with longitudinal flat edges and butt edges on the ends, accompanied by an All Service Jacket (ASJ) for enhanced durability and performance.
+      </p>
+      {% include why-chose-belform.html %}
+      <ul class="actions">
+          <li"><a href="mailto:chantal@belform.com" class="button big">Get a quote</a></li>
+      </ul>
+  </div>
+  <span class="image object">
+    <img src="assets/images/home_image_belform.png" alt="">
+  </span>
+</section>
+
+
+{% include prod_view.html %}
+
+{% include proj_view.html %}
+{% include callback.html %}
+{% include map.html %}
+
+<script>
+  let slideIndex = [1,1];
+  let slideId = ["slide_f1", "slide_f2"]
+  showSlides(1, 0);
+  showSlides(1, 1);
+
+  function plusSlides(n, no) {
+    showSlides(slideIndex[no] += n, no);
+  }
+
+  function showSlides(n, no) {
+    let i;
+    let x = document.getElementsByClassName(slideId[no]);
+    if (n > x.length) {slideIndex[no] = 1}
+    if (n < 1) {slideIndex[no] = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex[no]-1].style.display = "block";
+  }
+  // JavaScript to handle interactive scrolling
+  const marquee = document.getElementById('marquee');
+  let isScrolling = false;
+  let startX;
+  let scrollLeft;
+
+  marquee.addEventListener('mousedown', (e) => {
+      isScrolling = true;
+      startX = e.pageX - marquee.offsetLeft;
+      scrollLeft = marquee.scrollLeft;
+  });
+
+  marquee.addEventListener('mouseleave', () => {
+      isScrolling = false;
+  });
+
+  marquee.addEventListener('mouseup', () => {
+      isScrolling = false;
+  });
+
+  marquee.addEventListener('mousemove', (e) => {
+      if (!isScrolling) return;
+      e.preventDefault();
+      const x = e.pageX - marquee.offsetLeft;
+      const walk = (x - startX) * 2; // Adjust scroll speed as needed
+      marquee.scrollLeft = scrollLeft - walk;
+  });
+</script>

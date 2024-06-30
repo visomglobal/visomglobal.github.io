@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% include common_details_css.html %}
+
+<section class="blog-section">
+    <nav>
+        <a href="/">Home</a> / <a href="{{'projects'| relative_url}}">Projects</a>
+    </nav>
+    <hr>
+    <h1>{{ page.title }}</h1>
+    <h2>{{ page.subtitle }}</h2>
+    <div class="short-description">{{ page.short_description_1 }}</div>
+    <div class="short-description">{{ page.short_description_2 }}</div>
+    {% include slideshow.html %}
+    <!-- <img src="{{ page.image_url }}" alt="{{ page.title }}"> -->
+    <p>{{ content }}</p>
+    <hr>
+    <nav>
+        <a href="/">Home</a> / <a href="{{'projects'| relative_url}}">Projects</a>
+    </nav>
+</section>
+{% include callback.html %}

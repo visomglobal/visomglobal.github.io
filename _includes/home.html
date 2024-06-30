@@ -1,0 +1,77 @@
+
+<div id="wrapper">
+
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
+            <!-- Header -->
+            <header id="header">
+                <h1><a href="/" class="logo"><strong>Belform </strong> Insulation LTD</a></h1>
+            </header>
+            <main>
+                {{ content }}
+            </main>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <div class="inner">
+
+            <!-- Search -->
+            <section id="search" class="alt" style="background-color: #f0f8ff00">
+                <a style="border: #f0f8ff00;" href="/"><img class="logo" src="{{ 'assets/images/logo.png' | relative_url}}" alt="logo"
+                        style="background-color: #f0f8ff00" /></a>
+            </section>
+
+            <!-- Menu -->
+            <nav id="menu">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="{{'about' | relative_url}}">About</a></li>
+                    <li><a href="{{'application'| relative_url}}">Applications</a></li>
+                    <li><a href="{{'machine'| relative_url}}">Machining Services</a></li>
+                    <li><a href="{{'products'| relative_url}}">Products</a></li>
+                    <li><a href="{{'projects'| relative_url}}">Projects</a></li>
+                    <li><a href="{{'services'| relative_url}}">Services</a></li>
+                    <li><a href="{{'specs'| relative_url}}">Specs</a></li>
+                   
+                    <!-- <li>
+                        <span class="opener">Docs</span>
+                        <ul>
+                            <li><a href="{{'specs'| relative_url}}" title="Specs English" aria-disabled="true">Specs - En</a></li>
+                            <li><a href="#" title="Specs French" style="pointer-events: none;">Specs - Fr</a></li>
+                        </ul>
+                    </li> -->
+
+                    
+                </ul>
+            </nav>
+            <header class="major">
+                <h2 onclick="openModal('callback')">Get in touch</h2>
+                <p>At Belform Insulation Ltd. we pride ourselves on making the best mechanical insulation available
+                    on the market.</p>
+                <ul class="actions">
+                    <li><a href="{{'about' | relative_url}}" class="button big">About Us</a></li>
+                </ul>
+            </header>
+            <ul class="contact">
+                <li class="icon solid fa-envelope"><a href="mailto:chantal@belform.com">Belform Insulation Ltd. <br>
+                        4231 Blakie Rd London<br>Ontario N6L
+                        1B8</a>
+                </li>
+                <li class="icon solid fa-phone"><a href="tel:+1-519-652-5190">519-652-5190</a></li>
+                <li class="icon solid fa-fax">519-652-2978</li>
+                <li class="icon solid fa-map-marker"><a
+                        href="https://www.google.com/maps/place/Belform+Insulation/@42.9187817,-81.2557142,15z/data=!4m5!3m4!1s0x0:0xf3d95bf6dd0dd19f!8m2!3d42.9188014!4d-81.2555549"
+                        target="_blank">4231 Blakie Rd, London, ON N6L 1B8, Canada</a></li>
+            </ul>
+            </section>
+
+            <!-- Footer -->
+            <footer id="footer">
+                <p class="copyright">&copy; Copyright © 2024, Belform Insulation. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</div>

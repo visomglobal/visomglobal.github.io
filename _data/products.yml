@@ -1,0 +1,11 @@
+- title_1: Product 1
+  image_url: /assets/images/products/product1.jpg
+  link: /products/product1
+
+- title_1: Product 2
+  image_url: /assets/images/products/product2.jpg
+  link: /products/product2
+
+- title_1: Product 3
+  image_url: /assets/images/products/product3.jpg
+  link: /products/product3

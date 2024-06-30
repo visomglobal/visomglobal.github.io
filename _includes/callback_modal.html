@@ -1,0 +1,89 @@
+<style>
+
+    /* Modal Styles */
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        .modal-content {
+            margin: 15% auto;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .modal-content {
+            margin: 20% auto;
+        }
+    }
+</style>
+
+<!-- Modal for Google Form -->
+<div id="callModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Request a Callback</h2>
+        <p>Fill out the form below and we'll get in touch with you shortly.</p>
+        <!-- Replace with your Google Form embed code -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRCbUyNbFtnOdpkbdyI4q1II8lCQjrZPMLW--HydL3quhEpw/viewform" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+</div>
+
+<script>
+    // Open modal based on button clicked
+    function openModal(type) {
+        if (type === 'call') {
+            alert("Functionality for 'Call Us Now' button goes here.");
+            // Replace with actual functionality (e.g., phone call)
+        } else if (type === 'callback') {
+            var modal = document.getElementById('callModal');
+            modal.style.display = 'block';
+        }
+    }
+    // Function to initiate a phone call
+    function callPhoneNumber(phoneNumber) {
+        // Use window.open with 'tel:' protocol to initiate the call
+        window.open('tel:' + phoneNumber);
+    }
+
+    // Close the modal
+    function closeModal() {
+        var modal = document.getElementById('callModal');
+        modal.style.display = 'none';
+    }
+</script>

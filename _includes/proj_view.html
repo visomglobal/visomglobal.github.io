@@ -1,0 +1,21 @@
+<section>
+    <header class="major">
+        <h2>Belform Insulation Projects</h2>
+        <!-- Marquee Component -->
+        <div class="marquee" id="marquee">
+            <div class="marquee-content">
+                {% for project in site.belform_projects %}
+                <div class="thumbnail-wrapper">
+                    <a href="{{ project.url }}">
+                        <img src="{{ project.images }}" alt="{{ project.title }}">
+                        <div class="caption">{{ project.title }}</div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </header>
+    <ul class="actions">
+        <li><a href="{{'projects'| relative_url}}" class="button big">Our Projects</a></li>
+    </ul>
+</section>

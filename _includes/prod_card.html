@@ -1,0 +1,151 @@
+<style>
+    #blog #blog-card {
+        transition: all 0.25s ease;
+        margin-bottom: 0.5vmax;
+        transform: scale(0.85);
+        /* margin-right: 2.5vmax;
+        margin-left: 2.5vmax; */
+        line-height: normal;
+        border-radius: 0.25rem;
+        -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    #blog #blog-card .column {
+        display: grid;
+    }
+
+    #blog #blog-card .column .image {
+        border-radius: 0.25rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    #blog #blog-card .content {
+        margin: 0.5rem;
+    }
+
+    #blog #blog-card .title {
+        margin: 0.5rem !important;
+    }
+
+    .column {
+        margin: auto 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .image.is-16by9 {
+        padding-top: 56.25%;
+    }
+
+    .image {
+        display: block;
+        position: relative;
+    }
+
+    .title {
+        color: #363636;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.125;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .subtitle,
+    .title {
+        word-break: break-word;
+    }
+
+
+    .has-text-grey {
+        color: #7a7a7a !important;
+    }
+
+    /* .has-text-centered {
+        text-align: center !important;
+    } */
+    @media (max-width: 768px) {
+        #blog #blog-card {
+            transform: scale(1);
+            margin-bottom: 5vmax !important;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #blog #blog-card .image {
+            padding-top: 50% !important;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .has-text-left-desktop {
+            text-align: left !important;
+        }
+    }
+
+    @media screen and (min-width: 769px),
+    print {
+        .has-text-left-tablet {
+            text-align: left !important;
+        }
+    }
+
+    @media screen and (min-width: 769px),
+    print {
+        .columns:not(.is-desktop) {
+            display: flex;
+        }
+    }
+
+    @media screen and (min-width: 1408px) {
+        .column.is-one-third-fullhd {
+            flex: none;
+            width: 33.3333%;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        .column.is-one-third-desktop {
+            flex: none;
+            width: 33.3333%;
+        }
+    }
+
+    @media screen and (min-width: 769px),
+    print {
+
+        .column.is-one-third,
+        .column.is-one-third-tablet {
+            flex: none;
+            width: 33.3333%;
+        }
+    }
+</style>
+<section id="blog">
+    {% for product in site.belform_products %}
+    <div class="columns has-text-centered" id="blog-card">
+        <div class="column is-marginless is-paddingless is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
+            <div class="image is-16by9" style="background-image: url({{ product.images }});">
+            </div>
+        </div>
+        <a href="{{ product.url }}">
+            <div class="column has-text-left-desktop has-text-left-tablet">
+                <h1 class="title is-size-4-touch">{{ product.title }}</h1>
+                <div class="content has-text-grey">
+                    <cite style="font-size: large;
+                        font-family: 'Poppins', sans-serif;">
+                        {{ product.content | strip_html | truncatewords:50 }}
+                    </cite>
+                    <hr class="has-background-grey"> <span class="has-text-grey">{{ product.title }}</span> |
+                    <i class="fas fa-clock"></i> Belform Insulation Canada
+                    <span class="has-text-weight-semibold"> | 3
+                        min</span> read
+                </div>
+                <!-- <p>{{ product.content | strip_html | truncatewords:50 }}</p> -->
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</section>

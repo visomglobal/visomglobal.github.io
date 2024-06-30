@@ -1,0 +1,44 @@
+<style>
+    /* Custom Section Styles */
+    #callback {
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    #callback button {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+        #callback {
+            padding: 15px;
+        }
+
+        #callback button {
+            font-size: 0.9em;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        #callback {
+            padding: 10px;
+        }
+
+        #callback button {
+            font-size: 0.8em;
+        }
+
+    }
+</style>
+<section id="callback">
+    <h2><a href="#contact-sheet">Contact Us</a></h2>
+    <button onclick="callPhoneNumber('+1-519-652-5190')">Call Us Now</button>
+    <button onclick="openModal('callback')">We'll Call You Back</button>
+</section>

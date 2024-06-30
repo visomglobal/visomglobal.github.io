@@ -1,0 +1,69 @@
+<style>
+    /* No styles that interfere with existing website styles */
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .custom-section h2 {
+        color: #333;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .custom-section p {
+        color: #666;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            padding: 0 10px;
+        }
+    }
+
+    /* Custom styles for this section only */
+    .custom-section {
+        padding: 50px 0;
+        background-color: #f9f9f9;
+        text-align: center;
+    }
+
+    .map-container {
+        position: relative;
+        overflow: hidden;
+        padding-top: 56.25%;
+        /* Aspect ratio 16:9 for responsive iframe */
+        margin-top: 30px;
+    }
+
+    .map-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    @media (max-width: 768px) {
+        .custom-section {
+            padding: 30px 0;
+        }
+    }
+</style>
+
+<section class="custom-section">
+    <div class="container">
+        <h2>Find Us on the Map</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11687.290499777617!2d-81.2557142!3d42.9187817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882ef154e64a21ff%3A0xf3d95bf6dd0dd19f!2sBelform%20Insulation!5e0!3m2!1sen!2sin!4v1719668039321!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</section>
