@@ -1,0 +1,78 @@
+<style>
+    #wide-navbar {
+        display: none;
+        /* Hidden by default */
+        width: 100%;
+        background-color: #f0f8ff7a;
+        color: #3d4449;
+        padding: 10px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        /* Ensure it stays on top */
+    }
+
+    #wide-navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    #wide-navbar li {
+        float: left;
+    }
+
+    #wide-navbar li a {
+        display: block;
+        color: inherit;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        margin: 5px;
+        margin-left: 1rem;
+        font-weight: bold;
+    }
+
+    #wide-navbar li a:hover {
+        background-color: #ddd;
+        color: black;
+        transform: scale(1.1);
+        border-radius: 7px;
+    }
+
+    #wide-navbar nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* Media query for screens 1281px and wider */
+    @media (min-width: 1281px) {
+        #wide-navbar {
+            display: block;
+            /* Display the nav bar */
+        }
+
+        #sidebar {
+            display: none;
+        }
+    }
+
+</style>
+
+<section id="wide-navbar">
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="{{'about' | relative_url}}">About</a></li>
+            <li><a href="{{'application'| relative_url}}">Applications</a></li>
+            <li><a href="{{'machine'| relative_url}}">Machining Services</a></li>
+            <li><a href="{{'products'| relative_url}}">Products</a></li>
+            <li><a href="{{'projects'| relative_url}}">Projects</a></li>
+            <li><a href="{{'services'| relative_url}}">Services</a></li>
+            <li><a href="{{'specs'| relative_url}}">Specs</a></li>
+        </ul>
+        <a href="/"><img class="logo" src="{{ 'assets/images/logo.png' | relative_url}}" alt="Belform Insulation logo"/></a>
+    </nav>
+</section>
