@@ -1,6 +1,7 @@
 ---
 layout: proj_detail
 title:  "LHSC Victoria Hospital"
+date: 2023-02-14 15:12:00
 images: 
 - /assets/images/products/prj_LHSC-Victoria-Hospital.jpg
 subtitle : Efficient Insulation Installation at LHSC Victoria Hospital with Belform Insul-Phen

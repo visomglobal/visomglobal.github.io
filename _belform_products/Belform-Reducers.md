@@ -1,6 +1,7 @@
 ---
 layout: prod_detail
 title:  "Reducers"
+date: 2023-07-18 12:15:00
 images:
 - /assets/images/products/Reducer_1.jpeg
 - /assets/images/products/Reducer_2.jpeg 

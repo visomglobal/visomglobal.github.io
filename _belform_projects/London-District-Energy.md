@@ -1,6 +1,7 @@
 ---
 layout: proj_detail
 title:  "London District Energy"
+date: 2023-05-08 09:37:00
 images: 
 - /assets/images/products/prj_London-District-Energy.jpg
 subtitle : Professional Insulation Installation at London District Energy with Belform Cellular Foam Glass

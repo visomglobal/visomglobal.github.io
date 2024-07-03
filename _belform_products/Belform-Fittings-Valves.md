@@ -1,6 +1,7 @@
 ---
 layout: prod_detail
 title:  "Fittings - Valves"
+date: 2023-07-07 05:00:00
 images:
 - /assets/images/products/insulation-fitting-valves.jpeg
 - /assets/images/products/insulation-fitting-valves2.jpeg

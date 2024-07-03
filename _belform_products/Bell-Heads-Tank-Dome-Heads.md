@@ -1,7 +1,7 @@
 ---
 layout: prod_detail
 title:  "Bell Heads / Tank Dome Heads"
-# image_url: /assets/images/products/product1.jpg
+date: 2023-08-22 14:45:00
 images:
   - /assets/images/products/Dome_1.jpg
   - /assets/images/products/Dome_2.jpg

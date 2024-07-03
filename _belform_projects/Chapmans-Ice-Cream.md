@@ -1,6 +1,7 @@
 ---
 layout: proj_detail
 title:  "Chapman’s Ice Cream"
+date: 2023-06-12 11:28:00
 images: 
 - /assets/images/products/prj_Chapmans-Ice-Cream.jpg
 subtitle : Efficient Insulation at Chapman's Ice Cream with Belform's Interlocking Styrofoam System

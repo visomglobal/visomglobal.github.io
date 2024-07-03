@@ -1,6 +1,7 @@
 ---
 layout: proj_detail
 title:  "Maple Leaf Food Inc"
+date: 2023-03-13 16:05:00
 images: 
 - /assets/images/products/prj_Maple-Leaf-Food-Inc.jpg
 subtitle : State-of-the-art poultry processing plant scheduled to open in 2022 in London Ontario.

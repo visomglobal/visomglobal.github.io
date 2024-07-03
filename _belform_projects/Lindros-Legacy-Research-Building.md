@@ -1,6 +1,7 @@
 ---
 layout: proj_detail
 title:  "Lindros Legacy Research Building"
+date: 2023-10-12 13:24:00
 images: 
 - /assets/images/products/prj_Lindros-Legacy-Research-Building.jpg
 subtitle : Efficient Insulation Installation at Lindros Legacy Research Building with Belform Insul-Phen

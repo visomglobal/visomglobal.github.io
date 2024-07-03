@@ -1,6 +1,7 @@
 ---
 layout: prod_detail
 title:  "Fittings - Elbows"
+date: 2024-06-01 10:00:00
 images:
 - /assets/images/products/insulation-fitting-elbows1.jpeg
 - /assets/images/products/insulation-fitting-elbows2.jpeg

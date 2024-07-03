@@ -1,6 +1,7 @@
 ---
 layout: prod_detail
 title:  "Pipe Covering"
+date: 2022-12-14 10:32:00
 images:
 - /assets/images/products/Pipe_Covering_1.jpeg
 - /assets/images/products/Pipe_Covering_2.jpeg 
