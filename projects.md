@@ -1,6 +1,7 @@
 ---
 layout: prod
 title: Belform Products
+permalink: /projects/
 ---
 
 

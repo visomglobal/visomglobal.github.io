@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Machine Service
+permalink: /machine/
 ---
 <article>
 <br><p>Belform Insulation’s state-of-the art CNC machining systems give us industry leading capabilities, with large format high speed foam machining. With in-house CAD/CAM services, using MasterCam, we can design models for you in 3D and manufacture them quickly, or you can provide us with a CAD model of the items you need made.</p>

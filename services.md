@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Services
+permalink: /services/
 ---
 <article>
 <h2>Services</h2>

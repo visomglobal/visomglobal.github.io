@@ -14,8 +14,10 @@ source: .
 collections:
   belform_products:
     output: true
+    permalink: /products/:slug
   belform_projects:
       output: true
+      permalink: /projects/:slug
 
 author:
   name: "Belform Insulation Canada"
