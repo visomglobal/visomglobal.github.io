@@ -1,1 +1,0 @@
-# visomglobal.github.io
